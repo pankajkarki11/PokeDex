@@ -83,7 +83,7 @@ export default function Index() {
     }}
     >
       {pokemons.map((pokemon) => (
-        <Link href={`/details`} key={pokemon.name}>
+        <Link href={{ pathname:`/details`, params:{ name: pokemon.name }}}  key={pokemon.name}>
         <View  style={{
 
           //@ts-ignore
